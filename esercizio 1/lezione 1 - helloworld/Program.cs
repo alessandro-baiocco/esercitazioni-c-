@@ -7,11 +7,13 @@ class Lezione1
     static void Main(string[] args)
     {
 
-        LezioneUno();
-        VariabiliECostanti();
-        Esercizi1();
-        Casting();
-        Stringhe();
+        //LezioneUno();
+        //VariabiliECostanti();
+        //Esercizi1();
+        //Casting();
+        //Stringhe();
+        //Esercizi2();
+        Esercizi3();
 
 
     }
@@ -163,11 +165,11 @@ class Lezione1
         string stringa1 = "citazione : \n\"si vive una volta sola\""; // escape dei caratteri
         Console.WriteLine(stringa1);
 
-        string nome = "mario"
-        string cognome = "rossi"
+        string nome = "mario";
+        string cognome = "rossi";
 
-        string format = string.Format("buongiorno sono {0} {1}", nome, cognome) //formattazione
-        string interpol = string.Format($"buongiorno sono {nome} {cognome}") //interpolazione
+        string format = string.Format("buongiorno sono {0} {1}", nome, cognome); //formattazione
+        string interpol = string.Format($"buongiorno sono {nome} {cognome}"); //interpolazione
         string testMetodi = nome.ToUpper(); // altri metodi: toLower, Length , indexing , IndexOF , SubString
 
 
@@ -179,6 +181,191 @@ class Lezione1
 
 
     }
+
+
+    static void Esercizi2()
+    {
+        //🍰 Esercizio 1
+        //Scrivi un programma che dichiara due variabili numeriche e ne calcola la somma.Stampa il risultato a schermo.   
+
+        int valore1Es1 = 4;
+        int valore2Es1 = 3;
+        int somma = valore1Es1 + valore2Es1;
+        Console.WriteLine("la somma è :" + somma);
+
+
+
+        //🍰 Esercizio 2
+        //Scrivi un programma che dichiara due variabili numeriche e ne calcola la differenza.Stampa il risultato a schermo.
+        int valore1Es2 = 44;
+        int valore2Es2 = 32;
+        int differenza = valore1Es2 - valore2Es2;
+        Console.WriteLine("la differenza è :" + differenza);
+
+
+
+
+        //🍰 Esercizio 3
+        //Scrivi un programma che dichiara due variabili numeriche e ne calcola il prodotto.Stampa il risultato a schermo.
+        int valore1Es3 = 4;
+        int valore2Es3 = 5;
+        int prodotto = valore1Es3 * valore2Es3;
+        Console.WriteLine("il prodotto è :" + prodotto);
+
+
+
+
+        //🍰 Esercizio 4
+        //Scrivi un programma che dichiara due variabili numeriche intere e ne calcola il quoziente. Stampa il risultato a schermo.
+        int valore1Es4 = 15;
+        int valore2Es4 = 3;
+        int quoziente = valore1Es4 / valore2Es4;
+        Console.WriteLine("il quoziente è : " + quoziente);
+
+
+
+        //🍰 Esercizio 5
+        //Scrivi un programma che dichiara due variabili numeriche decimali e ne calcola il quoziente. Stampa il risultato a schermo.
+
+        double valore1Es5 = 30.9;
+        double valore2Es5 = 10.2;
+        double quoziente2 = valore1Es5 / valore2Es5;
+        Console.WriteLine("il quoziente è : " + quoziente2);
+
+
+        //🍰 Esercizio 6
+        //Scrivi un programma che dichiara due variabili numeriche e ne calcola il resto.Stampa il risultato a schermo.
+
+        double valore1Es6 = 30;
+        double valore2Es6 = 4;
+        double resto = valore1Es6 % valore2Es6;
+        Console.WriteLine("il resto è : " + resto);
+
+        //🍰 Esercizio 7
+        //Scrivi un programma che dichiara una variabile numerica e ne incrementa il valore di 1.Stampa il nuovo valore a schermo.
+
+        int valore1Es7 = 15;
+        valore1Es7 += 1;
+        Console.WriteLine("+1 : " + valore1Es7);
+
+
+
+        //🍰 Esercizio 8
+        //Scrivi un programma che dichiara una variabile numerica e ne decrementa il valore di 1.Stampa il nuovo valore a schermo.
+
+        int valore1Es8 = 15;
+        valore1Es8 -= 1;
+        Console.WriteLine("-1 : " + valore1Es8);
+
+
+        //🍰 Esercizio 9
+        //Scrivi un programma che dichiara una variabile numerica e ne calcola la radice quadrata. Stampa il risultato a schermo.
+
+        int valore1Es9 = 25;
+        valore1Es9 = (int) Math.Sqrt(valore1Es9); 
+        Console.WriteLine("radice : " + valore1Es9);
+
+
+        //🍰 Esercizio 10
+        //Scrivi un programma che genera un numero casuale compreso tra 1 e 100.Stampa il numero generato a schermo.
+        Random rnd = new Random();
+
+        int random = rnd.Next(101);
+        Console.WriteLine(random);
+
+
+    }
+
+
+    static void Esercizi3()
+    {
+
+
+
+    //🍰 Esercizio 1
+    //Scrivi un programma che utilizzi un ciclo for per stampare i numeri da 1 a 10.
+
+        for(int i = 0; i < 10; i++)
+        {
+            Console.WriteLine(i + 1);
+        }
+
+
+
+
+        //🍰 Esercizio 2
+        //Scrivi un programma che utilizzi un ciclo 'for' per calcolare la somma dei numeri da 1 a 100 e stampare il risultato.
+
+
+        int totalEs2 = 0;
+        for (int i = 1; i < 101; i++)
+        {
+            totalEs2 += i;
+        }
+        Console.WriteLine("totale : " + totalEs2);
+
+        //🍰 Esercizio 3
+        //Scrivi un programma che utilizzi un ciclo 'for' per stampare i numeri pari da 2 a 20.
+
+
+        for (int i = 2; i < 22; i += 2)
+        {
+            Console.WriteLine(i); 
+        }
+
+
+
+        //🍰 Esercizio 4
+        //Scrivi un programma che accetti un numero intero positivo da tastiera e utilizzi un ciclo 'for' per calcolarne il fattoriale.
+
+        int inputEs4 = Convert.ToInt32(Console.ReadLine());
+        int totalEs4 = 1;
+
+
+        for(int i = 1; i < inputEs4 + 1; i++)
+        {
+            totalEs4 *= i;
+
+
+        }
+        Console.WriteLine("fattoriale : " + totalEs4);
+
+
+
+
+        //🍰 Esercizio 5
+        //Scrivi un programma che utilizzi un ciclo for per stampare i caratteri dalla lettera 'A' alla lettera 'Z'.
+
+
+        for (char c = 'A'; c < 'Z' + 1; c++)
+        {
+            Console.WriteLine(c);
+        }
+
+
+
+
+        //🍰 Esercizio 6
+        //Scrivi un programma che accetti un numero intero da tastiera e utilizzi un ciclo 'for' per stampare la tabellina di quel numero da 1 a 10.
+        //🍰 Esercizio 7
+        //Scrivi un programma che utilizzi un ciclo 'for' per stampare i numeri da 10 a 1 in ordine decrescente.
+        //🍰 Esercizio 8
+        //: Scrivi un programma che definisca un array di interi e utilizzi un ciclo 'for' per stampare tutti gli elementi dell'array.
+        //🍰 Esercizio 9
+        //Scrivi un programma che accetti una stringa da tastiera e utilizzi un ciclo 'for' per stampare tutti i caratteri della stringa uno per uno.
+        //🍰 Esercizio 10
+        //Scrivi un programma che accetti due numeri interi da tastiera, uno come base e l'altro come esponente, e utilizzi un ciclo 'for' per calcolare la potenza della base elevata all'esponente.
+
+
+
+
+
+
+
+    }
+
+
+
 
 }
 

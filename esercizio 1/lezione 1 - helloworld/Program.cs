@@ -290,9 +290,6 @@ class Lezione1
             Console.WriteLine(i + 1);
         }
 
-
-
-
         //🍰 Esercizio 2
         //Scrivi un programma che utilizzi un ciclo 'for' per calcolare la somma dei numeri da 1 a 100 e stampare il risultato.
 
@@ -314,10 +311,10 @@ class Lezione1
         }
 
 
-
         //🍰 Esercizio 4
         //Scrivi un programma che accetti un numero intero positivo da tastiera e utilizzi un ciclo 'for' per calcolarne il fattoriale.
 
+        Console.WriteLine("inserisci un numero :");
         int inputEs4 = Convert.ToInt32(Console.ReadLine());
         int totalEs4 = 1;
 
@@ -330,9 +327,6 @@ class Lezione1
         }
         Console.WriteLine("fattoriale : " + totalEs4);
 
-
-
-
         //🍰 Esercizio 5
         //Scrivi un programma che utilizzi un ciclo for per stampare i caratteri dalla lettera 'A' alla lettera 'Z'.
 
@@ -342,19 +336,65 @@ class Lezione1
             Console.WriteLine(c);
         }
 
-
-
-
         //🍰 Esercizio 6
         //Scrivi un programma che accetti un numero intero da tastiera e utilizzi un ciclo 'for' per stampare la tabellina di quel numero da 1 a 10.
+
+        Console.WriteLine("inserisci un numero :");
+        int inputEs6 = Convert.ToInt32(Console.ReadLine());
+
+
+        for (int i = 0; i < 11; i++)
+        {
+            Console.WriteLine($"tabellina di {inputEs6}| {i} : {inputEs6 * i}" );
+        }
+
+
         //🍰 Esercizio 7
         //Scrivi un programma che utilizzi un ciclo 'for' per stampare i numeri da 10 a 1 in ordine decrescente.
+
+        for (int i = 10; i > 0 ; i--)
+        {
+            Console.WriteLine(i);
+        }
+
         //🍰 Esercizio 8
         //: Scrivi un programma che definisca un array di interi e utilizzi un ciclo 'for' per stampare tutti gli elementi dell'array.
+
+        int[] arrayEs8 = [23, 14, 74, 28, 11];
+
+        for(int i = 0; i < arrayEs8.Length; i++)
+        {
+            Console.WriteLine(arrayEs8[i]);
+        }
+
         //🍰 Esercizio 9
         //Scrivi un programma che accetti una stringa da tastiera e utilizzi un ciclo 'for' per stampare tutti i caratteri della stringa uno per uno.
+
+        string inputEs9 = Console.ReadLine();
+        Console.WriteLine("inserisci del testo :");
+
+        for (int i = 0; i < inputEs9.Length; i++)
+        {
+            Console.WriteLine(inputEs9[i]);
+        }
+
         //🍰 Esercizio 10
         //Scrivi un programma che accetti due numeri interi da tastiera, uno come base e l'altro come esponente, e utilizzi un ciclo 'for' per calcolare la potenza della base elevata all'esponente.
+
+        Console.WriteLine("inserisci la base numerica :");
+        int input1Es10 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("inserisci l'esponente :");
+        int input2Es10 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("inserisci del testo :");
+        int totalEs10 = 1;
+
+        for (int i = 0; i < input2Es10; i++)
+        {
+            totalEs10 *= input1Es10;
+        }
+
+        Console.WriteLine("totale : " + totalEs10);
+
 
 
 
